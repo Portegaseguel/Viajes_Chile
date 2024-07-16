@@ -16,6 +16,16 @@ h2 {
     padding: 40px
 }
 
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    transition: color 0.3s; 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #39BDEF; 
+}
+
+
 .navbar-scrolled {
     background-color: #39BDEF; 
     transition: background-color 0.3s; 
@@ -33,7 +43,6 @@ h2 {
     }
 }
 
-
 .card-group .card small {
     padding: 10px;
 }
@@ -41,8 +50,11 @@ h2 {
 .card-group .card {
     border: none; 
     background-color: transparent; 
-    margin-bottom: 20px; 
-    
+    margin-bottom: 20px;   
+}
+
+.card {
+    background-color: #39BDEF; /* Color de fondo para todas las cards */
 }
 
 .card-header {
@@ -50,8 +62,22 @@ h2 {
     max-height: 200px;
 }
 
-.bg-custom-blue {
+.btn-azul {
     background-color: #39BDEF;
+    border-color: #39BDEF;
+    color: white;
+}
+
+.btn-azul:hover {
+    background-color: transparent;
+    border-color: #39BDEF;
+    color: #39BDEF; 
+}
+
+.btn-azul:focus {
+    outline: none; 
+    box-shadow: none; 
+    border-color: #39BDEF;
 }
 
 .icon-white {
@@ -72,13 +98,37 @@ h2 {
     background-color: #39BDEF;
 }
 
+.tooltip-message {
+    display: none;
+    position: fixed;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #39BDEF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.tooltip-message.active {
+    display: block;
+}
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.footer {
+.footer-link {
     font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
 }
 
 .social-icons i {

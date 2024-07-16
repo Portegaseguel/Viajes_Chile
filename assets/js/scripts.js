@@ -17,3 +17,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    if (name === '' || email === '' || message === '') {
+        alert('Por favor, complete todos los campos del formulario.');
+        event.preventDefault(); 
+        return;
+    }
+
+    var tooltip = document.getElementById('tooltipMessage');
+    tooltip.classList.add('active');
+    setTimeout(function() {
+        tooltip.classList.remove('active');
+    }, 4000); 
+
+   
+});
