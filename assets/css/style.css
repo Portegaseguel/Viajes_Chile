@@ -7,12 +7,60 @@
     "wdth" 100;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 650px; /* Ajusta la altura según tus necesidades */
-    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor */
-}
-
 body {
     background-color: black;
+}
+
+h2 {
+    text-align: center;
+    padding: 40px
+}
+
+.navbar-scrolled {
+    background-color: #39BDEF; 
+    transition: background-color 0.3s; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 650px; 
+    object-fit: fill; 
+}
+
+.card-group .card small {
+    padding: 10px;
+}
+
+.card-group .card {
+    border: none; 
+    background-color: transparent; 
+    margin-bottom: 20px; 
+    
+}
+
+.card-header {
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.bg-custom-blue {
+    background-color: #39BDEF;
+}
+
+.icon-white {
+    color: white;
+    font-size: 25px;
+    
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%; 
+}
+
+.btn-azul{
+    margin-top: 20px;
+    background-color: #39BDEF;
 }
